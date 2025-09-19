@@ -153,7 +153,7 @@ span.highlight {
   object-fit: cover;
   border-radius: 50%;   /* keep circular profile look */
   display: block;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.1s ease;
   position: absolute;
   top: 0;
   left: 0;
