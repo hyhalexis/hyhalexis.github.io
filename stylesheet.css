@@ -147,7 +147,6 @@ span.highlight {
   aspect-ratio: 1 / 1;  /* force a square container */
   margin: 0 auto;
   overflow: hidden;     /* hide overflow so images don’t spill */
-  border-radius: 50%;   /* keeps circular profile look */
 }
 
 .hover-img img {
@@ -155,8 +154,7 @@ span.highlight {
   width: 100%;
   height: 100%;
   object-fit: cover;     /* crops & fills the square evenly */
-  border-radius: 50%;   /* both images stay circular */
-  transition: opacity 0.3s ease;
+  transition: opacity 0.1s ease;
   top: 0;
   left: 0;
 }
