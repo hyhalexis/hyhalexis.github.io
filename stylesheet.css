@@ -140,3 +140,39 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+.hover-img {
+  position: relative;
+  display: inline-block;
+  width: 80%;          /* matches your inline style */
+  max-width: 100%;
+}
+
+.hover-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;   /* keep circular profile look */
+  display: block;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hover-img .img-front {
+  opacity: 1;
+  z-index: 1;
+}
+
+.hover-img .img-back {
+  opacity: 0;
+  z-index: 2;
+}
+
+.hover-img:hover .img-front {
+  opacity: 0;
+}
+
+.hover-img:hover .img-back {
+  opacity: 1;
+}
